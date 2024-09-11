@@ -1,0 +1,197 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Making the header fixed */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  text-align: center;
+  z-index: 1000; /* Ensure it stays above other content */
+}
+
+/* Making the section transition smooth */
+html {
+  scroll-behavior: smooth;
+}
+section {
+  height: 100vh;
+  padding: 20px;
+  overflow: hidden;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #333;
+  background-color: #fff;
+  padding-top: 10px; /* Equal to the height of the header */
+}
+
+h1,
+p {
+  max-width: 100%;
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgb(240, 198, 198);
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/*Logo*/
+.logo {
+  font-weight: 720;
+  font-size: large;
+}
+
+.menu-icon {
+  font-size: 24px;
+  color: red;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-left: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  position: relative;
+  align-items: center;
+}
+
+.nav-links a:hover {
+  color: #e70c1e;
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4dddd;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-evenly;
+}
+
+.hero-content {
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 64px;
+  color: black;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.hero h1 span {
+  color: red;
+  max-width: 100%;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: #e63946;
+  letter-spacing: 4px;
+  margin-top: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 48px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  img {
+    border-radius: 30px;
+    max-width: 100%;
+  }
+
+  .languages div {
+    min-width: 15%;
+  }
+}
+
+/*About Me section*/
+.about {
+  background-color: #943f46;
+  margin: auto;
+  padding-top: 59px;
+  text-align: center;
+  color: #ffff;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+/*My Projects*/
+.skills {
+  background-color: #e4dddd;
+  margin: auto;
+  padding-top: 59px;
+
+  color: black;
+  height: 100vh;
+}
+.skills h2 {
+  font-weight: 800;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.languages {
+  display: flex;
+  justify-content: space-around;
+}
+.languages div {
+  border: 2px solid rgb(175, 128, 128);
+  border-radius: 20px;
+  padding: 20px;
+}
+
+/*Footer*/
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+}
+
+footer .social-media a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}
